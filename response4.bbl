@@ -1,0 +1,30 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gargett et~al.(1984)Gargett, Osborn, and Nasmyth]{gargett84}
+A.~Gargett, T.~Osborn, and P.~Nasmyth.
+\newblock Local isotropy and the decay of turbulence in a stratified fluid.
+\newblock \emph{J. Fluid Mech.}, 144:\penalty0 231--280, 1984.
+
+\bibitem[Riley and de~Bruyn~Kops(2003)]{riley03}
+J.~J. Riley and S.~M. de~Bruyn~Kops.
+\newblock Dynamics of turbulence strongly influenced by buoyancy.
+\newblock \emph{Phys. of Fluids}, 15\penalty0 (7):\penalty0 2047--2059, 2003.
+
+\bibitem[Hebert and de~Bruyn~Kops(2006)]{hebert06b}
+D.~A. Hebert and S.~M. de~Bruyn~Kops.
+\newblock Predicting turbulence in flows with strong stable stratification.
+\newblock \emph{Phys. Fluids}, 18\penalty0 (6):\penalty0 1--10, 2006.
+
+\bibitem[Brethouwer et~al.(2007)Brethouwer, Billant, Lindborg, and
+  Chomaz]{brethouwer07}
+G.~Brethouwer, P.~Billant, E.~Lindborg, and J.-M. Chomaz.
+\newblock Scaling analysis and simulation of strongly stratified turbulent
+  flows.
+\newblock \emph{J. Fluid Mech.}, 585:\penalty0 343--368, 2007.
+
+\end{thebibliography}

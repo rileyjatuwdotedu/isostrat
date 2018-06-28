@@ -1,0 +1,27 @@
+ln -s ../Plots/Vslice/R2325_rho_xz.pdf  .
+ln -s ../Plots/Gn/gnslice.pdf  .
+ln -s ../Plots/Stats/urmsR160F2.pdf  .
+ln -s ../Plots/Stats/urmsR600F2.pdf  .
+ln -s ../Plots/Stats/urmsR2325F2 .png  .
+ln -s ../Plots/Stats/urms.pdf  .
+ln -s ../Plots/Stats/allLengthsR160F2.pdf  .
+ln -s ../Plots/Stats/allLengthsR600F2.pdf  .
+ln -s ../Plots/Stats/allLengthsR2325F2.pdf  .
+ln -s ../Plots/Stats/rho.pdf  .
+ln -s ../Plots/Stats/froude.pdf  .
+ln -s ../Plots/Stats/keRatio.pdf  .
+ln -s ../Plots/Stats/te.pdf  .
+ln -s ../Plots/Stats/b.pdf  .
+ln -s ../Plots/Stats/cum-b.pdf  .
+ln -s ../Plots/Stats/chi.pdf  .
+ln -s ../Plots/Stats/eta.pdf  .
+ln -s ../Plots/Stats/reynolds.pdf  .
+ln -s ../Plots/Stats/D1.pdf  .
+ln -s ../Plots/Spec/compensated.pdf  .
+ln -s ../Plots/ShearSpec/issf_shear.pdf  .
+ln -s ../Plots/Stats/urmsR160F2b.pdf  .
+ln -s ../Plots/Stats/urmsR600F2b.pdf  .
+ln -s ../Plots/Stats/urmsR2325F2b.pdf  .
+ln -s ../Plots/F-Re/Fh-Gn.pdf  .
+ln -s ../Plots/Stats/froudeLate.pdf  .
+ln -s ../Plots/VDerivMoms/ee.pdf

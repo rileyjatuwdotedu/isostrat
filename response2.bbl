@@ -1,0 +1,31 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Waite(2011)]{waite11}
+M.~L. Waite.
+\newblock Stratified turbulence at the buoyancy scale.
+\newblock \emph{Phys. Fluids}, 23\penalty0 (6):\penalty0 066602, JUN 2011.
+\newblock ISSN 1070-6631.
+\newblock \doi{10.1063/1.3599699}.
+
+\bibitem[Almalkie and de~Bruyn~Kops(2012)]{almalkie12a}
+S.~Almalkie and S.~M. de~Bruyn~Kops.
+\newblock Kinetic energy dynamics in forced, homogeneous, and axisymmetric
+  stably stratified turbulence.
+\newblock \emph{J. Turbul.}, 13\penalty0 (29):\penalty0 1--29, 2012.
+
+\bibitem[Gargett et~al.(1984)Gargett, Osborn, and Nasmyth]{gargett84}
+A.~Gargett, T.~Osborn, and P.~Nasmyth.
+\newblock Local isotropy and the decay of turbulence in a stratified fluid.
+\newblock \emph{J. Fluid Mech.}, 144:\penalty0 231--280, 1984.
+
+\bibitem[Lindborg(2006)]{lindborg06a}
+E.~Lindborg.
+\newblock The energy cascade in a strongly stratified fluid.
+\newblock \emph{J. Fluid Mech.}, 550:\penalty0 207--242, 2006.
+
+\end{thebibliography}
