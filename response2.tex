@@ -1,0 +1,166 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[a4paper, margin=2.6cm]{geometry}
+
+\bibpunct{[}{]}{,}{a}{}{;} 
+
+% For multiletter symbols
+\newcommand{\Rey}{\ensuremath{\mathrm{Re_\lambda}}}
+\newcommand{\R}{\ensuremath{\mathrm{Re}}}
+\newcommand{\Rb}{\ensuremath{\mathrm{Re_b}}}
+\newcommand\Real{\mbox{Re}} % cf plain TeX's \Re and Reynolds number
+\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+\newcommand{\Fh}{\ensuremath{\mathrm{F_h}}}
+\newcommand{\DD}{\ensuremath{{\cal D}}}
+\newcommand{\DT}{\ensuremath{{\cal D}_{tot}}}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{1em plus0.4em minus0.3em}
+
+
+\begin{document}
+\noindent
+{\Large\bfseries Response to Referee \#2}
+
+\vspace*{1em}
+\noindent
+We are very pleased that the referee recommends publication. We also greatly
+appreciate the referee's constructive comments, which have proved very helpful
+in guiding our thinking on this topic.  We address each of the referee's
+comments below. All of the differences between the original and new versions
+of the manuscript are indicated by change bars in the margin.
+
+\noindent
+{\em 
+1. I don’t understand why the $2 \pi$ factor is included in the definition of the
+Froude number. I know the authors tend to do this, but does anyone else? If
+not, why bother - it just makes comparisons with other studies more
+difficult. On page 2, it is suggested that the $2 \pi$ is included because it is
+part of the buoyancy period, and the Froude number is a ratio of time
+scales. But one could equally argue that there should be a $2 \pi$ in the eddy time
+scale L/U (e.g. in a circular eddy with azimuthal velocity U at radius L). It
+just seems arbitrary. Furthermore, it seems to be omitted in some cases ($Fr_h$
+in the middle of page 2) and it makes several resulting equations cumbersome,
+e.g. for $E_p$ and buoyancy flux on page 15, potential energy dissipation rate on
+page 17 (why is it not $(2\pi)^2$ ?), relationship between Gn and R, etc. 
+}
+
+We appreciate that we have been unable to persuade the community to adopt the
+factor of $2\pi$ in the Froude number.  Nevertheless, we find our definition
+to be informative because $Fr \sim O(1)$ is an important theoretical threshold
+and an order of magnitude change in $Fr$ significantly changes the flow
+because it is $Fr^2$ that appears in the dimensionless momentum equation.  For
+example, scaling analysis suggest that $Fr\approx 1$ a buoyancy period after
+stratification is imposed, and we use this prediction to verify the current
+simulations.    Observing that $Fr \approx 0.16$ after 6.3 buoyancy times, which is the
+equivalent statement when the factors of $2\pi$ are omitted, gives the
+impression of an emprical result, not the exhibiting of a result predicted by
+theory.  
+
+In our opinion, the main difficulty in comparing $Fr$ in the literature is not
+the factor of $2\pi$ but the different length scales that are used.  The
+literature shows that the horizontal longitidunal integral length $L_h$ is the
+dynamically relevant length scale rather than the turbulence length scale $L_t
+= u^3/\epsilon$, and that $L_h/L_t$ is a function of $Fr$.  So the common
+practice of defining a Froude number defined in terms of $L_t$ makes it a
+function of itself and also makes the threshold for strong stratifcation
+effects $Fr \ll O(1)$.
+
+So we think that our inclusion of $2\pi$ in the the definition of $Fr$ has
+important advantages and presents a very minor problem in comparing Froude
+numbers between papers relative to the other challenges in doing so.
+
+{\bf Jim
+On page 2 and the other pages of the introduction, many definitions of the
+Froude number are used as review the published literature.  On page 2 we have
+change modified the notation to show, e.g., that $Fr_h$ scales with $U_h/N
+L_h$.}
+
+The definition of $\chi$ on page 17 was in error and has been corrected.
+
+$Gn$ is defined Gibson and is extensively used in the oceanography community
+without it being interpreted as $(L_o/L_k)^{4/3}$.  If it is interpreted as
+this ratio, then it would be advantageous to include the factor of $2\pi$
+because $L_o$ is much smaller than the length that it is hypothesised to
+represent, that is, the largest length scale unaffected by buoyancy.
+\citet{waite11} and \citet{almalkie12a} recongnise this problem and include
+$2\pi$ in the defintion of $L_o$ so that $L_o$ is a physically plausible
+length scale in simulations.  However, since the use of $Gn$ predates its
+interpretation by \citet{gargett84} as a ratio of length scales, and is
+routinely used outside this context, we do not see any inconsistency with our
+omitting the factor of $2\pi$ in its definition.
+
+In our opinion, the factor of $2\pi$ is not a significant cause of the confusion
+related to $Gn / R \ne 1$ because different length scales and velocity scales
+are used in the defintions of $Gn$ and $R$.  Reconciling the two quantities
+requires accounting for $L_h/L_t$ and $u/u_h$, both of which vary with, at a
+minimum, with Froude and Reynolds number.  In fact we emphasise that $Gn$ and
+$R$ are different quantities, as shown by figure 11, not the same quantity
+written in terms of different multiplicative constants.
+
+
+{\bf Jim -- you worked through the derivation and may still have your notes.}
+
+\noindent
+{\em
+2. Some of the figure captions are difficult to understand. For example, in
+figure 3, there are reference lines for all the curves (this should be stated
+in caption) but only one is labelled in panels a and b. Also in figure 3, the
+caption can be misinterpreted as saying that symbols are for non-stratified
+cases in panel d only. It took some work for me to fully understand this
+figure. Other captions are lacking in any detail (e.g. figure 17). 
+}
+
+We have reworked almost all of the figures and captions in an attempt to make
+them as clear as possible.
+
+\noindent{\em
+3. There doesn’t seem to be any real reason for including Case IV in table 1,
+since it is not discussed or presented. 
+}
+
+{\bf Jim -- another review wonders why Case IV is introduced in the
+  conclusions.  I think we can just state the result (that it does not matter
+  what Fr we start with) and omit Case IV}
+
+\noindent{\em
+4. On page 12: how can stratification reduce the dissipation rate in forced
+simulations, where the dissipation rate must balance the forcing? I’m not sure
+this is a meaningful generic statement, since it will depend on the type of
+forcing used. }
+
+In general, forcing can maintain constant energy or inject constant power.  In
+the latter case, stratification cannot change the dissipation rate and instead
+changes the energy in the flow \citep[c.f.][]{lindborg06a}.  Our forcing
+maintains constant energy in a range of wave numbers and so stratification
+can, and does, change the dissipation rate.  The text has been changed to
+indicate that the simulations referenced used constant-energy forcing.
+
+\noindent{\em
+5. It would be interesting to include some energy spectra from the late time
+results. Does the horizontal spectrum look like kh−5 at these times, as seen
+in forced studies with viscous layering (Waite \& Bartello 2004, Brethouwer et
+al 2007)?}
+
+\noindent{\em
+6. Page 4, third paragraph: “consistent others” should be “consistent with others”
+}
+
+Corrected.
+
+\bibliographystyle{unsrtnat}
+\bibliography{bib}
+\end{document}
+
+%<!-- Local IspellDict: en_GB  -->
+% vim: set spell spelllang=en_gb:
+
+
+
+
+
+

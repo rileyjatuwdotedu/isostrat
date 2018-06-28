@@ -1,0 +1,240 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[a4paper, margin=2.6cm]{geometry}
+
+\bibpunct{[}{]}{,}{a}{}{;} 
+
+% For multiletter symbols
+\newcommand{\Rey}{\ensuremath{\mathrm{Re_\lambda}}}
+\newcommand{\R}{\ensuremath{\mathrm{Re}}}
+\newcommand{\Rb}{\ensuremath{\mathrm{Re_b}}}
+\newcommand\Real{\mbox{Re}} % cf plain TeX's \Re and Reynolds number
+\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+\newcommand{\Fh}{\ensuremath{\mathrm{F_h}}}
+\newcommand{\DD}{\ensuremath{{\cal D}}}
+\newcommand{\DT}{\ensuremath{{\cal D}_{tot}}}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{1em plus0.4em minus0.3em}
+
+
+\begin{document}
+\noindent
+{\Large\bfseries Response to Referee \#4}
+
+\vspace*{1em}
+\noindent
+
+We appreciate the reviewer's constructive comments, which have proved helpful
+in guiding our thinking.  We address each of the referee's comments below and
+note the associated changes to the manuscript.  All of the differences between
+the original and new versions of the manuscript are indicated by change bars
+in the margin.
+
+\noindent{\em
+1. The numerical simulations seem to have been carried out seriously but nowadays,
+it seems really old-fashon close-science to say nothing about the code.  It is now
+a standard practice to provide a repository of the code used to produce the
+numerical results.  How can we convince ourselves that there is no problem in the
+code?  In nowadays's science, reproducibility is taken seriously.  Without the
+codes, reproducing these results is nearly impossible or at least it would demand
+a huge effort.  If you do not want to open the code, I think you must write it
+explicitly.}
+
+The pseduo-spectral method has been in use since the 1970's.  The only
+variations involve the treatment of the nonlinear terms, the times steppping,
+and the dealiasing, all of which are discussed in \S2.  We do not think it
+would be useful to the majority of the JFM audience 
+to review at length this well-established numerical
+techique.
+
+An important point for reproducing the results is that the unstratified cases
+are in power law decay as demonstrated in figures 3 and 4.  The details of how
+this was done are analagous to the details of how a wind tunnel is physically
+constructed to produce isotropic homogeneous turbulence.  We include a few
+details for the benefit of those who might want to try something similar, but
+if other researchers want to verify our results then they need to create
+isotropic homogeneous turbulence in power law decay and then apply a buoyancy
+force.  Again, there is an analogy with laboratory experiments; researchers
+will normally try to reproduce published results in their own facility, not visit the
+original facility and run experiments there.
+
+\noindent{\em
+2. The manuscript lacks physical interpretations on what happens in the flow.  When
+the stratification is swichted on, approximately half of the energy should be in
+poloidal modes, which feel the stratification directly and can behave as waves.
+Are waves produced? These waves should be associated with very large vertical
+velocity compared to Billant \& Chomaz scaling.  What happen to them?  Then the
+toroidal flow should shear itself transferring energy to smaller vertical
+scales. What is the typical time for these evolutions? I think other analyses are necessary to study the dynamics of these flow, at least
+poloidal/toroidal spectra and spatio-temporal spectra.}
+
+\noindent{\em
+3. The conclusions are quite weak. What do we have to retain from your study? What
+is rely new?}
+
+\noindent{\em
+4.  The last paragraph of the conclusion should be put in the Numerical methods
+section. I was thinking about this remark during all my first read.  It would be
+much better to have it much before the conclusion.}
+
+\noindent{\em
+5. The switch between the name-symbol Buoyancy Reynolds number-$\mathcal{R}$ and
+activity parameter-$Gn$ is not clear at all. You first use Buoyancy Reynolds
+number-$\mathcal{R}$ for a quantity and then you say we are going to use activity
+parameter-$Gn$ for the buoyancy Reynolds number-$\mathcal{R}$ of Brethouwer et
+al. (2007).  The name-symbol Buoyancy Reynolds number-$\mathcal{R}$ has been used
+in many other studies after Brethouwer et al. (2007). I understand that you want
+to change this but then don't use Buoyancy Reynolds number-$\mathcal{R}$ for
+another quantity! It is very confusing!
+}
+
+$\mathcal{R}$ and $Gn$ are not the same quantity as is clear from their time
+evolutions plotted in figure 11.  As identified by \citet{gargett84}, $Gn$
+characterizes the scale separation between the Ozmidov and Kolmogorov length
+scales.  In contrast, $\mathcal{R}$ was introduced by \citet{riley03} based on
+arguments about shear instabilities and its relevance depends on the
+applicability of an inertial scaling assumption, that is, an assumption that
+$Gn$ is large.  \citet{hebert06b} show that the two quantities differ by a
+scalar multiple for a set of flows of the same general type for which $Gn$ is
+large.  This may have encouraged \citet{brethouwer07} to define $\mathcal{R}$
+in terms of the turbulence length scale, which makes it numerically equivalent
+to $Gn$.  A major result of the current manuscript, however, is that the flow dynamics
+depends strongly on the magnitude of $Gn$ and, therefore, it is essential that
+we consider both quantities.  
+
+We also note that in the stratified flow literature, both $\mathcal{R}$ and
+$Gn$ are refered to as `buoyancy Reynolds number' whereas in the oceanography
+literature that term is identified with $Gn$.  In an attempt to distinguish
+between the two conceptually different quantities, we and others have recently
+switched to the symbol $Gn$ and its original name `activity parameter.'  Our
+notation may simply add to the confusion since at least some oceanographers
+have asked why have changed well-established notation, but they are not
+familiar with the stratified turbulence literature in which the same name is
+used for two different concepts.
+
+
+\noindent{\em
+Then, the physical difference between your buoyancy Reynolds number-$\mathcal{R}$
+and your activity parameter-$Gn$ is not well discussed. Figures 11 and 12 could
+tell us about this difference but what do we learn from them?  I think your
+discussion in unclear and you do not give argument why you do not consider
+differences in Froude number when discussing the bibliography.}
+
+
+\section*{Other comments}
+We have reviewed some of the history of $\mathcal{R}$ and $Gn$ in response to
+comment 5, but we are very hesitant to go into great detail in the paper
+because they are simply two different quantities unless it is assumed that the
+integral and turbulence length scales are equal; figure 7 in
+\citet{maffiolli16} is one of many figures showing that this is not the case.
+So while $\mathcal{R}$ and $Gn$ have been used interchangeably in some papers,
+making a point that they are different is likely to cause more confusion than
+it alleviates.  
+
+--------------
+
+\noindent{\em
+- The introduction seems to be quite comprehensive but you cite only old
+experimental studies about stratified turbulence. Did not you forget more recent
+works?}
+
+\noindent{\em
+- The Numerical methodology has to be better presented.  Why don't you write the
+equation 6.247 of Poe p(2000).  You need to explain why you do this and what it
+implies for the decay.  Same thing for the "deterministic forcing schema similar
+to that of Overholt \& Pope (1998) (cf. ...)".  Explain at least a bit what it
+is. Same thing for the initialisation method.  In order to have a basic idea of
+the numerical methods, the reader needs to read four other articles.}
+
+As noted in response above to comment 1, the important point is that the
+initial conditions are isotropic and homogeneous and the flow is in power law
+decay with the decay constant given.  Again, the analogy with laboratory
+experiments is applicable; in the famous 1971 paper by Comte-Bellot and
+Corrsin, data is presented to show that the flow is isotropic and homogeneous
+but there is minimal discussion of the details of the wind tunnel
+construction.  We think that providing the reference as we have is an
+appropriate level of detail for a JFM article.
+
+\noindent{\em - I think many figures/captions are not of the quality standard
+  for JFM.  Looking at the figure and the caption, the reader should be able
+  to understand without looking for a small information in the text necessary
+  to understand the figure.  Can you please also improve the figure to have no
+  text superposed with lines or symbols.  In some figures, the y limits can be
+  changed to better see the curves.}  
+
+Another reviewer has asked for
+additional information, such as decay rates, to be superimposed on the
+figures. Evidently there is a range of
+opinions regarding the size of the figures and how easily they can be
+understood without referencing the text.  We have reviewed all the figures,
+made several of them larger,
+
+\noindent{\em
+- Figure 6: "Horizontal Froude number"... Not only horizontal.}
+
+Corrected.  
+
+\noindent{\em
+- Figure 16 and its presentation: I think you should cite Brethouwer et al (2007)
+who present a similar figure.  How did you choose the values Fh = 0.6 and Gn = 1?}
+
+\citet{brethouwer07} is insightful and we reference it in our paper.  However,
+figures similar to figure 16
+have been used at least as far back as talks associated
+with \citet{riley03}, including our APS/DFD talk in November 2002, and
+probably many years before that.  In fact, Brethouwer et al.\ introduced the
+twist of plotting $1/Fr$ rather than $Fr$ so that presenters of talks often
+pause to clarify whether the axes are in their original orientation or that of
+Brethouwer et al.  Importantly, we plot on the $Fr$-$Gn$ plane, not on the
+$Fr$-$Re$, plane because we conclude that $Gn$ is the more important
+parameter.  The horizontal lines on the plot are based on the observed changes
+in decays rates discussed throughout the paper.
+
+\noindent{\em
+- Figure 11: Why don't you normalized with the initial $\mathcal{R}$?}
+
+When stratification is first imposed, the assumptions supporting the relevance
+of $\mathcal{R}$ \citet{riley03} do not hold.  They are also do not hold at
+late time when $Gn < 1$.  So we do not see why it is
+appropriate to scale by this quantity.
+
+\noindent{\em
+- You mention that "Of interest is how the dynamics of a flow, initiated at a
+somewhat high Froude number, are modified by the presence of stable
+stratification, the behaviour of the flow as the stable stratification becomes
+dominant, i.e., when Fr < O(1), which is estimated to occur at about one buoyancy
+period after flow initiation". It would be good to mention that it depends on the
+decay laws introduced in paragraph 3.1.1.}
+
+We are not sure we understand the comment.  That $Fr \sim O(1)$ after one
+buoyancy period is based on scaling arguments reviewed in \citet{riley00}.
+The decay laws introduced in \S3.1.1 do not include the buoyancy time scale.
+
+\noindent{\em
+- It would be easier for the reader to add the exact formula relating D to the
+ratio Gn/R in equation (3.2).}
+
+As stated in the sentence following \eqref{3.2}, the exact formula is
+$(2\pi)^2 {\cal D}$.  Since ${\cal D}$ is a well-established quantity in the
+turbulence literature and the factor of $(2\pi)^2$ arises from our definition
+of $Fr$, we think that most readers will recognise \eqref{3.2} as written.  We
+could include both, but this seems cumbersome.
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{bib}
+\end{document}
+
+%<!-- Local IspellDict: en_GB  -->
+% vim: set spell spelllang=en_gb:
+
+
+
+
+
+

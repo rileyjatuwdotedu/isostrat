@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[a4paper, margin=2.6cm]{geometry}
+
+\bibpunct{[}{]}{,}{a}{}{;} 
+
+% For multiletter symbols
+\newcommand{\Rey}{\ensuremath{\mathrm{Re_\lambda}}}
+\newcommand{\R}{\ensuremath{\mathrm{Re}}}
+\newcommand{\Rb}{\ensuremath{\mathrm{Re_b}}}
+\newcommand\Real{\mbox{Re}} % cf plain TeX's \Re and Reynolds number
+\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+\newcommand{\Fh}{\ensuremath{\mathrm{F_h}}}
+\newcommand{\DD}{\ensuremath{{\cal D}}}
+\newcommand{\DT}{\ensuremath{{\cal D}_{tot}}}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{1em plus0.4em minus0.3em}
+
+
+\begin{document}
+\noindent
+{\Large\bfseries Response to Referee \#3}
+
+We are very pleased that the referee recommends publication. We also greatly
+appreciate the referee's constructive comments, which have proved very helpful
+in guiding our thinking on this topic.  We address each of the referee's
+comments below. All of the differences between the original and new versions
+of the manuscript are indicated by change bars in the margin.
+
+\noindent
+{\em
+1. In Figure 3 the decay of the r.m.s. velocity components with time is given for the 3
+stratified cases, together with least-squares fits to the data, from which it is clear that
+the decay rate is smaller than for HIT. However, the least-squares fits are plotted
+without the exponent n being indicated, making it very difficult to understand if
+the present DNS results are in quantitative agreement with Davidson's predictions.
+It is hinted at in the text that the value of n from the DNS is lower than n = 0.4
+as predicted by Davidson and then a value n = 0.28 is reported in the caption of a
+later figure, Figure 7. These exponents are of interest and important to appreciate
+the accuracy of the theory and/or the difference with the simulations. Similarly to
+the non-stratified cases where n is explicitly given, please give values for n for all 3
+cases regarding the decay of $u'$ and $v'$. Along the same lines, I would recommend
+stating the exponents of $L_h \sim t^m$ and $L_v \sim t^p$ obtained from least-squares fits to
+the curves in figure 4 for Case III.
+}
+
+\noindent
+{\em
+2. The evolution of horizontal spectra is considered and they are seen to
+evolve significantly from the initial spectrum valid for HIT. A similar and
+probably greater evolution is expected for the vertical spectra, which are
+expected to become steeper because of the presence of the layers and obey a
+form $E_h(k_v) \sim N^2k_v^{-3}$ . It would be interesting to add a plot with the
+evolution of the vertical spectra, for example of $E_{xx}^z$, during the early
+and intermediate times.
+}
+
+\noindent
+{\em
+3. In \S3.2 concerning the late time results, it is discussed that the flow
+enters a viscous-dominated regime and that the vertical lengthscale is expected
+to be $L_v \sim L_hRe^{-1/2}$, as proposed by Godoy-Diana et al.\ (2004). It could be
+interesting to plot $L_v$ vs.\ $t$
+or $L_v Re^{1/2}/L_h$ vs.\ $t$ and check that this relation is verified in the simulations at late
+times.
+}
+
+\noindent
+{\em
+4. In the Conclusions and Discussion section the differences with 3 previous
+experimental studies which obtained different decay rates are discussed. It is
+suggested that the differences may be due to the initial conditions, which in
+DNS are HIT while in the experiments consist in a turbulent flow which has
+already been modified by the stratification before it becomes fully
+developed. While this may be a significant difference, I do not believe it is
+the most important one. In the case of the experiments of Praud et al.\ (2005)
+the main difference is most probably the Reynolds number since Re is low in
+their experiments. As mentioned in \S3.2, this will probably have led to a
+decay associated with the viscous-dominated regime with a value of $n$ close to
+that of isotropic turbulence, as seen in Figure 17. For this case, this
+appears to be a more plausible explanation for the discrepancy.
+}
+
+
+\section*{Minor revisions}
+
+\noindent{\em
+* Typos:
+\begin{enumerate}
+\item `active parameter' (in the Abstract). {\normalfont Corrected}
+
+\item typo in definition of $\hat{N}$ (p.7). {\normalfont\bf I don't see it}
+
+\item $t = 0$ should be
+$t = 1$ (caption of Table 1). {\normalfont Corrected}
+
+\item buoyancy flux expression should have no minus sign (end
+of p.15). {\normalfont\bf True, but the minus is probably there because we are
+  talking about k.e.  We need to consider the wording of the sentence}
+
+\item definition of $L_o$ (p.19), the factor should be of $(2\pi)^2$ (p.21).
+{\normalfont\bf There was a typo in the definition, but I don't see why there
+  should be a $2\pi$.}
+
+\item it should be
+$Fr_h/Fr_v$ (p.27). {\normalfont Corrected}
+
+\item the ratio should be $Rt_G/(15/4)$ (end of p.28). {\normalfont\bf I don't understand}
+\end{enumerate}
+}
+
+\noindent{\em
+* In the Introduction a hypothesis made by Davidson (2010) to arrive at (1.1) has
+been missed. It was assumed that $\epsilon \sim u_h^3/L_h$, in stratified turbulence. This should
+be stated in the Introduction.}
+
+\noindent{\em
+* The gray scale colour map makes it very difficult to understand the value of $Gn$ in
+the images in Figure 2. Could a colour map with colours be used instead for clarity?}
+
+{\bf Color doesn't make sense because the variable changes continuosly.
+  Several reviewers are not convinced about this figure.  I don't know how
+  much the figure 2 adds beyond figure 1}
+
+\noindent{\em
+* In \S 3.1.3 please give the definition of $\hat{u}_h$. A brief comment on the evolution of $Fr_v$
+and on $Fr_v \approx const$ for the final period of Figure 6 could be added.}
+
+\noindent{\em
+* Please give the definition of $L_h$ in Equation (3.2) and which was used in Figure 12.}
+
+{\bf $\boldsymbol{ L_h}$ appears first in the 2nd paragraph of the intro.}
+
+\bibliographystyle{unsrtnat}
+\bibliography{bib}
+\end{document}
+
+%<!-- Local IspellDict: en_GB  -->
+% vim: set spell spelllang=en_gb:
+
+
+
+
+
+
